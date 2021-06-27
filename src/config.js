@@ -8,5 +8,5 @@ export const config = {
     path_validate_otp: 'users/validateOTP',
     path_generate_otp: 'users/generateOTP',
     obj_store_url: "https://objectstorage.ap-sydney-1.oraclecloud.com/p/aN9LGk2eR9et5awAb7nx5bP8o3m9ZtcwbZjxfWfkze8pv2HykxzK_ttwARimZWn0/n/sdpvhturfunc/b/ocichallenge/o/",
-    obj_store_read_url: "https://objectstorage.ap-sydney-1.oraclecloud.com/p/aN9LGk2eR9et5awAb7nx5bP8o3m9ZtcwbZjxfWfkze8pv2HykxzK_ttwARimZWn0/n/sdpvhturfunc/b/ocichallenge/o/",
+    obj_store_read_url: "https://objectstorage.ap-sydney-1.oraclecloud.com/n/sdpvhturfunc/b/ocichallenge/o/",
 }
