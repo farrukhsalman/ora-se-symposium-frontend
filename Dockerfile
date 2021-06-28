@@ -1,7 +1,10 @@
-FROM node
+FROM node:latest
+
+RUN mkdir /usr/src/app
 WORKDIR /usr/src/app
 RUN npm install -g create-react-app
 RUN create-react-app social-experience
+
 WORKDIR /usr/src/app/social-experience
 COPY . .
 RUN npm install
