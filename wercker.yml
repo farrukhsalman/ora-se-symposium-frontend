@@ -27,12 +27,6 @@ build:
 
 docker-build:
   steps:
-    - script:
-        name: debug
-        cwd: $WERCKER_ROOT/.
-        code: |
-          ls -l
-          cat ./Dockerfile
     - internal/docker-build:
         context: $WERCKER_ROOT
         g: false
