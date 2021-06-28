@@ -3,7 +3,7 @@ WORKDIR /usr/src/app
 RUN npm install -g create-react-app
 RUN create-react-app social-experience
 WORKDIR /usr/src/app/social-experience
-COPY package.json .
+COPY . .
 RUN npm install
 COPY . .
 RUN npm run build
