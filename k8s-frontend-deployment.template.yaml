@@ -16,11 +16,11 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: ora-se-symposium-backend-service
+  name: ora-se-symposium-frontend-service
 spec:
   selector: 
    matchLabels:
-    app: ora-se-symposium-backend
+    app: ora-se-symposium-frontend
   replicas: 4
   template:
     metadata:
