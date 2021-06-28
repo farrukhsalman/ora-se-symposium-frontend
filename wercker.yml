@@ -16,7 +16,7 @@ build:
     - script:
         name: echo nodejs information
         code: |
-          echo "node version $(node -v) running"
+          echo "node version $(node -v) running added by Farrukh"
           echo "npm version $(npm -v) running"
   after-steps:
     - install-packages:
