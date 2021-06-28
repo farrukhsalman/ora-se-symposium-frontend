@@ -1,10 +1,11 @@
 FROM node:latest
 
-WORKDIR /usr/src/app
+RUN mkdir se-symposium-frontend
+WORKDIR se-symposium-frontend
 RUN npm install -g create-react-app
 RUN create-react-app social-experience
 
-WORKDIR /usr/src/app/social-experience
+WORKDIR social-experience
 COPY . .
 RUN npm install
 
