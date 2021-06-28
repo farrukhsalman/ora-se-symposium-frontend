@@ -34,7 +34,7 @@ docker-build:
           ls -l
           cat ./Dockerfile
     - internal/docker-build:
-        dockerfile: Dockerfile
+        dockerfile: Dockerfileabc
         image-name: $APP_NAME
 
     - internal/docker-push: 
