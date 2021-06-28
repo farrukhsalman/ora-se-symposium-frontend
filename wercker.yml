@@ -65,16 +65,15 @@ kubernetes-deploy:
         cwd: $WERCKER_ROOT/.
   
     - script:
-        name: Remove template files
-        cwd: $WERCKER_ROOT/.
-        code: |
-          rm *.yaml
-    - script:
         name: debug
         cwd: $WERCKER_ROOT/.
         code: |
           ls -l
-  
+    - script:
+        name: debug
+        cwd: $WERCKER_ROOT/.
+        code: |
+          cp k8s-frontend-deployment.template.yaml k8s-frontend-deployment.yaml 
     - script:
         name: echo tags
         code: |
