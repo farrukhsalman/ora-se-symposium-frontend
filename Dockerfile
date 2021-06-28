@@ -5,7 +5,6 @@ RUN create-react-app social-experience
 WORKDIR /usr/src/app/social-experience
 COPY . .
 RUN npm install
-COPY . .
 RUN npm run build
 RUN npm install -g serve
 CMD serve -s build
